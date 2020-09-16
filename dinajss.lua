@@ -1,7 +1,7 @@
 --[[
     Lua script to use with dinaj.ini Rainmeter skin
-    William Nichols | FlyingHyrax
-    2019-09-28
+    William Nichols
+    2020-09-15
 --]]
 
 --[[ LOCAL VARIABLES =========================================================]]
@@ -210,6 +210,9 @@ local function changeWeatherCondtoPresent(weathercondition)
     end
     if splitweathercondition[2] == "Snowshower" then
         splitweathercondition[2] = "Snowshowering"
+    end
+    if splitweathercondition[1] == "Smoke" then
+        splitweathercondition[1] = "Smoky"
     end
     return table.concat(splitweathercondition," ")
 end
