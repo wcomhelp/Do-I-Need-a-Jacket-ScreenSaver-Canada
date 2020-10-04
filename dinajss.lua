@@ -220,6 +220,12 @@ local function changeWeatherCondtoPresent(weathercondition)
     if splitweathercondition[1] == "Haze" then
         splitweathercondition[1] = "Hazy"
     end
+    if splitweathercondition[1] == "Rain" then
+        splitweathercondition[1] = "Raining"
+    end
+    if splitweathercondition[2] == "Rain" then
+        splitweathercondition[2] = "Raining"
+    end
     return table.concat(splitweathercondition," ")
 end
 
