@@ -214,6 +214,8 @@ local function changeWeatherCondtoPresent(weathercondition)
     if splitweathercondition[1] == "Smoke" then
         splitweathercondition[1] = "Smoky"
     end
+	if splitweathercondition[1] == "Mist" then
+        splitweathercondition[1] = "Misty"
     return table.concat(splitweathercondition," ")
 end
 
